@@ -20,13 +20,15 @@ struct Post: Codable {
 // implemented api communication
 func APIConnection(completion: @escaping (([Post]) -> () )) {
     let url = URL(string: "http://adaspace.local/users")!
+    
     let task = URLSession.shared.dataTask(with: url){
+        
         data, response, error in
         guard let dataResponse = data else {return }
         
-        do {let posts = try JSONDecoder().decode([Post].self, from: dataResponse)
+        do {let allUsers = try JSONDecoder().decode([Post].self, from: dataResponse)
 //            print("object posts: \(posts)")
-            completion(posts)
+            completion(allUsers)
             
         } catch let error{
             print("ERROR: \(error)")

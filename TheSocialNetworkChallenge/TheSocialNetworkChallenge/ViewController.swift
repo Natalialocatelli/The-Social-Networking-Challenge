@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         APIConnection{
-        (posts) in
-            print("posts: \(posts[0])")
+        (users) in
+            print("posts: \(users[0].email)")
         }
         // Do any additional setup after loading the view.
     }
