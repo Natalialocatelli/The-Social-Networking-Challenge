@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Post: Codable {
+struct Users: Codable {
 //    O codable serve para fazer a tradução de dados do tipo json nos dados que vamos usar no código
 //    Os nomes devem ser os mesmos que a API chama para que a conversão do Decoder funcione!
     
@@ -18,7 +18,7 @@ struct Post: Codable {
 }
 
 // implemented api communication
-func APIConnection(completion: @escaping (([Post]) -> () )) {
+func APIConnection(completion: @escaping (([Users]) -> () )) {
     let url = URL(string: "http://adaspace.local/users")!
     
     let task = URLSession.shared.dataTask(with: url){
@@ -26,7 +26,7 @@ func APIConnection(completion: @escaping (([Post]) -> () )) {
         data, response, error in
         guard let dataResponse = data else {return }
         
-        do {let allUsers = try JSONDecoder().decode([Post].self, from: dataResponse)
+        do {let allUsers = try JSONDecoder().decode([Users].self, from: dataResponse)
 //            print("object posts: \(posts)")
             completion(allUsers)
             

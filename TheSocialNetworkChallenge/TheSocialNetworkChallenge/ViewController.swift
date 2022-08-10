@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         (users) in
             print("posts: \(users[0].email)")
         }
+        APIRequestPosts{
+            (Posts) in print("Posts\(Posts)")
+        }
         // Do any additional setup after loading the view.
     }
 

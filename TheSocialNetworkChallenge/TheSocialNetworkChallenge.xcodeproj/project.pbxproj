@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA47BBB728A3EC56008CD50A /* PostAcessMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47BBB628A3EC56008CD50A /* PostAcessMethods.swift */; };
 		F88BE37428A29AC0002D3D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88BE37328A29AC0002D3D81 /* AppDelegate.swift */; };
 		F88BE37628A29AC0002D3D81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88BE37528A29AC0002D3D81 /* SceneDelegate.swift */; };
 		F88BE37828A29AC0002D3D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88BE37728A29AC0002D3D81 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA47BBB628A3EC56008CD50A /* PostAcessMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAcessMethods.swift; sourceTree = "<group>"; };
 		F88BE37028A29AC0002D3D81 /* TheSocialNetworkChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSocialNetworkChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88BE37328A29AC0002D3D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F88BE37528A29AC0002D3D81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				F88BE37E28A29AC4002D3D81 /* LaunchScreen.storyboard */,
 				F88BE38128A29AC4002D3D81 /* Info.plist */,
 				F88BE3A328A2A4FB002D3D81 /* API.swift */,
+				AA47BBB628A3EC56008CD50A /* PostAcessMethods.swift */,
 			);
 			path = TheSocialNetworkChallenge;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				F88BE37828A29AC0002D3D81 /* ViewController.swift in Sources */,
 				F88BE37428A29AC0002D3D81 /* AppDelegate.swift in Sources */,
 				F88BE3A428A2A4FB002D3D81 /* API.swift in Sources */,
+				AA47BBB728A3EC56008CD50A /* PostAcessMethods.swift in Sources */,
 				F88BE37628A29AC0002D3D81 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
