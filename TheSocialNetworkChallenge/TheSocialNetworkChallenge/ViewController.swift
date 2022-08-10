@@ -11,7 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        connectAPI()
+        APIConnection{
+        (posts) in
+            print("posts: \(posts[0])")
+        }
         // Do any additional setup after loading the view.
     }
 
