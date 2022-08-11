@@ -11,12 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIConnection{
+        getUsers{
         (users) in
-            print("posts: \(users[0].email)")
+            print("user0: \(users[0].email)")
         }
         APIRequestPosts{
-            (Posts) in print("Posts\(Posts)")
+            (Posts) in print("Posts\(Posts[0]).")
         }
         // Do any additional setup after loading the view.
     }

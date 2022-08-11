@@ -18,7 +18,8 @@ struct Users: Codable {
 }
 
 // implemented api communication
-func APIConnection(completion: @escaping (([Users]) -> () )) {
+
+func getUsers(completion: @escaping (([Users]) -> () )) {
     let url = URL(string: "http://adaspace.local/users")!
     
     let task = URLSession.shared.dataTask(with: url){

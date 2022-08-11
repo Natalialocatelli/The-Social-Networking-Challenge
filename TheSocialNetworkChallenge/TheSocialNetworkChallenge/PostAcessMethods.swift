@@ -29,10 +29,10 @@ func APIRequestPosts(completion: @escaping (([Posts]) -> ())){
 
 struct Posts: Codable {
     let user_id: String
-    let media: String
+    let media: String?
     let like_count: Int
-    let created_at: Date
-    let updated_at: Date
+    let created_at: String
+    let updated_at: String
     let content: String
 }
 
